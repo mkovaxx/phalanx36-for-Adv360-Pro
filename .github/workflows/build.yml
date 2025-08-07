@@ -1,4 +1,15 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    paths:
+    - '.github/workflows/**'
+    - 'bin/**'
+    - 'config/**'
+  pull_request:
+    paths:
+    - '.github/workflows/**'
+    - 'bin/**'
+    - 'config/**'
+  workflow_dispatch:
 
 name: Build
 
